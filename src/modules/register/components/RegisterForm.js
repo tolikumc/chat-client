@@ -72,9 +72,13 @@ export default class RegisterForm extends React.Component {
             </Form>
           ) : (
             <div className="auth__success-block">
-                <div>
-                    <Icon type='info-circle' style={{fontSize: '50px', color: ''}} theme="twoTone"/>
-                </div>
+              <div>
+                <Icon
+                  type="info-circle"
+                  style={{ fontSize: '50px' }}
+                  theme="twoTone"
+                />
+              </div>
               <h3>Verify your account</h3>
               <p>
                 An email has been sent to your mail with a link to the account

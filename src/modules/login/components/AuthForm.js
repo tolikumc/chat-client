@@ -17,7 +17,7 @@ export default class LoginForm extends React.Component {
             <Form.Item>
               <Input
                 prefix={
-                  <Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                  <Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
                 }
                 placeholder="Username"
               />
@@ -25,7 +25,7 @@ export default class LoginForm extends React.Component {
             <Form.Item>
               <Input
                 prefix={
-                  <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                  <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
                 }
                 type="password"
                 placeholder="Password"

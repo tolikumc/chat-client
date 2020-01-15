@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "npm run eslint && npm run stylelint",
-    "eslint": "eslint --fix ./src/**/*.{tsx,ts} && echo 'ESLint complete.'",
+    "eslint": "eslint --fix ./src && echo 'ESLint complete.'",
     "stylelint": "stylelint --fix ./src && echo 'StyleLint complete.'"
   },
   "husky": {
