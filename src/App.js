@@ -6,7 +6,7 @@ import { Home } from './pages/home/Home';
 const App = () => {
   return (
     <div className="wrapper">
-      <Route component={Auth} path={['/', '/login']} exact />
+      <Route component={Auth} path={['/', '/login', '/registration']} exact />
       <Route component={Home} path={'/im'} />
     </div>
   );
