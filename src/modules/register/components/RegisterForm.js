@@ -21,7 +21,7 @@ export default class RegisterForm extends React.Component {
                   prefix={
                     <Icon
                       type="mail"
-                      style={{ color: 'rgba(0, 0, 0, 0.25)' }}
+                      style={{ color: 'rgba(0, 0, 0, 0.25)', }}
                     />
                   }
                   placeholder="E-mail"
@@ -32,7 +32,7 @@ export default class RegisterForm extends React.Component {
                   prefix={
                     <Icon
                       type="user"
-                      style={{ color: 'rgba(0, 0, 0, 0.25)' }}
+                      style={{ color: 'rgba(0, 0, 0, 0.25)', }}
                     />
                   }
                   placeholder="Username"
@@ -43,7 +43,7 @@ export default class RegisterForm extends React.Component {
                   prefix={
                     <Icon
                       type="lock"
-                      style={{ color: 'rgba(0, 0, 0, 0.25)' }}
+                      style={{ color: 'rgba(0, 0, 0, 0.25)', }}
                     />
                   }
                   placeholder="Password"
@@ -54,7 +54,7 @@ export default class RegisterForm extends React.Component {
                   prefix={
                     <Icon
                       type="lock"
-                      style={{ color: 'rgba(0, 0, 0, 0.25)' }}
+                      style={{ color: 'rgba(0, 0, 0, 0.25)', }}
                     />
                   }
                   type="password"
@@ -75,7 +75,7 @@ export default class RegisterForm extends React.Component {
               <div>
                 <Icon
                   type="info-circle"
-                  style={{ fontSize: '50px' }}
+                  style={{ fontSize: '50px'}}
                   theme="twoTone"
                 />
               </div>
