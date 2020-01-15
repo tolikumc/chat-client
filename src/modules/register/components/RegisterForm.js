@@ -75,7 +75,7 @@ export default class RegisterForm extends React.Component {
               <div>
                 <Icon
                   type="info-circle"
-                  style={{ fontSize: '50px'}}
+                  style={{ fontSize: '50px', }}
                   theme="twoTone"
                 />
               </div>
