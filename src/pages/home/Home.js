@@ -1,38 +1,30 @@
 import React from 'react';
 import './home.scss';
 // import { Message } from '../../components/message';
-import { DialogItem } from '../../components/dialogItem';
+import { Dialogs } from '../../components/dialogs';
 
 export class Home extends React.Component {
   render() {
     return (
       <section className="home">
-        <div className="dialogs">
-          <DialogItem
-            user={{
-              fullName: 'Artem Maslov',
-              online: true
-            }}
-            unRead={10}
-          />
-        </div>
+        <Dialogs
+          userId={0}
+          items={[
+            {
+              _id: Math.random(),
 
-        {/*<Dialogs*/}
-        {/*  items={[*/}
-        {/*    {*/}
-        {/*      user: {*/}
-        {/*        fullname: 'Artem Maslov',*/}
-        {/*        avatar: null*/}
-        {/*      },*/}
-        {/*      message: {*/}
-        {/*        text:*/}
-        {/*          'Consequuntur dolorem expedita in, ipsam ipsum maiores molestias nulla porro rem soluta, suscipit!',*/}
-        {/*        isRead: false,*/}
-        {/*        updated_at: new Date()*/}
-        {/*      }*/}
-        {/*    }*/}
-        {/*  ]}*/}
-        {/*/>*/}
+              text:
+                'Consequuntur dolorem expedita in, ipsam ipsum maiores molestias nulla porro rem soluta, suscipit!',
+              created_at: 'Thu Jan 16 2020 21:59:37',
+              user: {
+                _id: 1,
+                fullName: 'Artem Maslov',
+                avatar:
+                  'https://storge.pic2.me/c/1360x800/473/5748e26f38963.jpg'
+              }
+            }
+          ]}
+        />
 
         {/*<Message*/}
         {/*  date="Wed Jan 15 2020 14:58:35"*/}
