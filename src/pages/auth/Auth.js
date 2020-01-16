@@ -1,8 +1,8 @@
 import React from 'react';
 import './auth.scss';
-import LoginForm from '../../modules/login/components/AuthForm';
 import { Route } from 'react-router';
-import RegisterForm from '../../modules/register/components/RegisterForm';
+import RegisterForm from '../../modules/register/container/RegisterForm';
+import LoginForm from '../../modules/login/container/LoginForm';
 
 export class Auth extends React.Component {
   render() {
