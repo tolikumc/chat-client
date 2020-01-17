@@ -3,6 +3,7 @@ import './index.scss';
 import classNames from 'classnames';
 // import { Time } from '../time';
 import { MessageStatus } from '../messageStatus';
+import { Avatar } from '../avatar';
 // import format from 'date-fns/format';
 // import isToday from 'date-fns/isToday';
 
@@ -15,21 +16,15 @@ import { MessageStatus } from '../messageStatus';
 //   }
 // };
 
-const getAvatar = avatar => {
-  if (avatar) {
-    return <img src={`${avatar}`} alt={`avatar`} />;
-  } else {
-    //ssss
-  }
-};
-
-export const DialogItem = ({ unRead, text, avatar, user, isMe }) => (
+export const DialogItem = ({ unRead, text, user, isMe }) => (
   <div
     className={classNames('dialogs__item', {
       'dialogs__item--online': user.online
     })}
   >
-    <div className="dialogs__item-avatar">{getAvatar(avatar)}</div>
+    <div className="dialogs__item-avatar">
+      <Avatar user={user} />
+    </div>
     <div className="dialogs__item-info">
       <div className="dialogs__item-info-top">
         <b>{user.fullName}</b>

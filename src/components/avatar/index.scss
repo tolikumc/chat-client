@@ -1,0 +1,13 @@
+.avatar{
+  border-radius: 50%;
+  height: 41px;
+  width: 41px;
+  &--symbol{
+    color: #ffffff;
+    text-align: center;
+    font-weight: 900;
+    line-height: 40px;
+    font-size: 18px;
+  }
+
+}
