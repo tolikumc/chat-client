@@ -22,7 +22,7 @@ export const LoginForm = props => {
             <Input
               id="email"
               prefix={
-                <Icon type="mail" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                <Icon type="mail" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
               }
               placeholder="E-mail"
               onChange={handleChange}
@@ -39,7 +39,7 @@ export const LoginForm = props => {
               onChange={handleChange}
               onBlur={handleBlur}
               prefix={
-                <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
               }
               placeholder="Password"
             />

@@ -54,7 +54,7 @@ export const AudioMessage = ({ audio }) => {
       <audio src={audio} preload="auto" ref={audioRef} />
       <div
         className="message__audio-progress"
-        style={{ width: progress + '%' }}
+        style={{ width: progress + '%', }}
       />
       <div className="message__audio-info">
         <div className="message__audio-info-btn">

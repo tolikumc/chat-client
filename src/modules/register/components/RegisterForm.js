@@ -25,7 +25,7 @@ export const RegisterForm = props => {
               <Input
                 id="email"
                 prefix={
-                  <Icon type="mail" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                  <Icon type="mail" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
                 }
                 placeholder="E-mail"
                 onChange={handleChange}
@@ -35,7 +35,7 @@ export const RegisterForm = props => {
             <Form.Item>
               <Input
                 prefix={
-                  <Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                  <Icon type="user" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
                 }
                 placeholder="Username"
               />
@@ -49,7 +49,7 @@ export const RegisterForm = props => {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 prefix={
-                  <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                  <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
                 }
                 placeholder="Password"
               />
@@ -57,7 +57,7 @@ export const RegisterForm = props => {
             <Form.Item>
               <Input
                 prefix={
-                  <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)' }} />
+                  <Icon type="lock" style={{ color: 'rgba(0, 0, 0, 0.25)', }} />
                 }
                 type="password"
                 placeholder="Password"
@@ -81,7 +81,7 @@ export const RegisterForm = props => {
             <div>
               <Icon
                 type="info-circle"
-                style={{ fontSize: '50px' }}
+                style={{ fontSize: '50px', }}
                 theme="twoTone"
               />
             </div>
