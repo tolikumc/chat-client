@@ -1,4 +1,4 @@
-@import '~reset-css';
+@import '~reset-css/sass/reset';
 @import 'variables';
 @import '~antd/dist/antd.css';
 
@@ -14,4 +14,7 @@ body,
 
 .button {
   text-transform: uppercase;
+}
+* {
+  outline: none;
 }

@@ -23,28 +23,27 @@ const getAvatar = avatar => {
   }
 };
 
-export const DialogItem = ({ user, unRead, message, isMe }) =>
-  console.log(message.created_at) || (
-    <div
-      className={classNames('dialogs__item', {
-        'dialogs__item--online': user.online
-      })}
-    >
-      <div className="dialogs__item-avatar">{getAvatar(user.avatar)}</div>
-      <div className="dialogs__item-info">
-        <div className="dialogs__item-info-top">
-          <b>{user.fullName}</b>
-          {/*<span>{<Time date={getMessageTime(message.created_at)} />}</span>*/}
-        </div>
-        <div className="dialogs__item-info-bottom">
-          <p>{message.text}</p>
-          {unRead > 0 && (
-            <div className="count">
-              <span>{unRead > 9 ? '+9' : unRead}</span>
-            </div>
-          )}
-          {isMe && <MessageStatus isRead={true} isMe={true} />}
-        </div>
+export const DialogItem = ({ unRead, text, avatar, user, isMe }) => (
+  <div
+    className={classNames('dialogs__item', {
+      'dialogs__item--online': user.online
+    })}
+  >
+    <div className="dialogs__item-avatar">{getAvatar(avatar)}</div>
+    <div className="dialogs__item-info">
+      <div className="dialogs__item-info-top">
+        <b>{user.fullName}</b>
+        {/*<span>{<Time date={getMessageTime(message.created_at)} />}</span>*/}
+      </div>
+      <div className="dialogs__item-info-bottom">
+        <p>{text}</p>
+        {unRead > 0 && (
+          <div className="count">
+            <span>{unRead > 9 ? '+9' : unRead}</span>
+          </div>
+        )}
+        {isMe && <MessageStatus isRead={true} isMe={true} />}
       </div>
     </div>
-  );
+  </div>
+);

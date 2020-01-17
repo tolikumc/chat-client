@@ -64,14 +64,56 @@
       }
     }
   }
+  &--isAudio {
+    audio {
+      display: none;
+    }
+    #{$self}__content-bubble {
+      position: relative;
+      width: 260px;
+      overflow: hidden;
+    }
+    #{$self}__audio-progress {
+      background: $audio-progress;
+      position: absolute;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transition: width 0.5s ease;
+    }
 
+    #{$self}__audio-info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 260px;
+      position: relative;
+      &-btn {
+        button {
+          width: 28px;
+          height: 28px;
+          background-color: #0f3997;
+          border-radius: 50%;
+          border: 0;
+          cursor: pointer;
+          img {
+            position: relative;
+            top: 2px;
+          }
+        }
+      }
+      &-duration {
+        color: #ffffff;
+        opacity: 0.5;
+      }
+    }
+  }
   &--isMe {
     flex-direction: row-reverse;
 
     #{$self} {
-
       &__avatar {
-
         img {
           margin-left: 13px;
           margin-right: 0;
@@ -106,11 +148,8 @@
   }
 
   &--image {
-
     #{$self} {
-
       &__content-attachments {
-
         img {
           height: 150px;
           width: 150px;
@@ -121,9 +160,7 @@
   //animation
 
   &--isTyping {
-
     #{$self} {
-
       &__content-bubble {
         background-color: $message-typing;
         box-shadow: 4px 5px 8px rgba(54, 116, 255, 0.196733);
@@ -132,7 +169,6 @@
   }
 
   &__typing {
-
     span {
       height: 8px;
       width: 8px;
@@ -141,17 +177,17 @@
       display: inline-block;
       margin-right: 8px;
 
-      &:nth-of-type( 1 ) {
+      &:nth-of-type(1) {
         animation: typingAnimation 1s ease-in-out infinite;
         animation-direction: normal;
       }
 
-      &:nth-of-type( 2 ) {
+      &:nth-of-type(2) {
         animation: typingAnimation 1s ease-in-out infinite;
         animation-direction: normal;
       }
 
-      &:nth-of-type( 3 ) {
+      &:nth-of-type(3) {
         animation: typingAnimation 1s ease-in-out infinite;
         animation-direction: normal;
       }
@@ -160,7 +196,6 @@
 }
 
 @keyframes typingAnimation {
-
   from {
     opacity: 0;
   }

@@ -3,6 +3,7 @@ import './index.scss';
 import classNames from 'classnames';
 import { Time } from '../time';
 import { MessageStatus } from '../messageStatus';
+import { AudioMessage } from '../audio-message';
 
 export const Message = ({
   avatar,
@@ -11,45 +12,50 @@ export const Message = ({
   isMe,
   isRead,
   attachments,
-  isTyping
-}) => (
-  <div
-    className={classNames('message', {
-      'message--isMe': isMe,
-      'message--isTyping': isTyping,
-      'message--image': attachments && attachments.length === 1
-    })}
-  >
-    <div className="message__avatar">
-      <img src={avatar} alt="av" />
-    </div>
-    <div className="message__content">
-      <MessageStatus isMe={isMe} isRead={isRead} />
-      {(text || isTyping) && (
-        <div className="message__content-bubble">
-          {text && <p className="text">{text}</p>}
-          {isTyping && (
-            <div className="message__typing">
-              <span />
-              <span />
-              <span />
-            </div>
-          )}
-        </div>
-      )}
-      <div className="message__content-attachments">
-        {attachments &&
-          attachments.map((item, idx) => (
-            <div className="item" key={idx}>
-              <img src={item.url} alt={item.filename} />
-            </div>
-          ))}
+  isTyping,
+  audio
+}) => {
+  return (
+    <div
+      className={classNames('message', {
+        'message--isMe': isMe,
+        'message--isTyping': isTyping,
+        'message--image': attachments && attachments.length === 1,
+        'message--isAudio': audio
+      })}
+    >
+      <div className="message__avatar">
+        <img src={avatar} alt="av" />
       </div>
-      {date && (
-        <span className="message__content-date">
-          <Time date={date} />
-        </span>
-      )}
+      <div className="message__content">
+        <MessageStatus isMe={isMe} isRead={isRead} />
+        {(audio || text || isTyping) && (
+          <div className="message__content-bubble">
+            {text && <p className="text">{text}</p>}
+            {isTyping && (
+              <div className="message__typing">
+                <span />
+                <span />
+                <span />
+              </div>
+            )}
+            {audio && <AudioMessage audio={audio} />}
+          </div>
+        )}
+        <div className="message__content-attachments">
+          {attachments &&
+            attachments.map((item, idx) => (
+              <div className="item" key={idx}>
+                <img src={item.url} alt={item.filename} />
+              </div>
+            ))}
+        </div>
+        {date && (
+          <span className="message__content-date">
+            <Time date={date} />
+          </span>
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
