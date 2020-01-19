@@ -7,8 +7,9 @@
 
   &-header {
     display: flex;
-    padding: 20px;
+    padding: 19px 19px 18px 19px;
     justify-content: space-between;
+    border-bottom: #f7f7f7 1px solid;
 
     > div {
 
@@ -20,7 +21,7 @@
   }
 
   &-search {
-    padding: 0 20px 20px 20px;
+    padding: 20px;
 
     input {
       background: #f7f8f9;
@@ -30,8 +31,11 @@
   }
 
   &-list {
+    height: calc(100% - 130px);
 
     .dialogs {
+      overflow: auto;
+      height: 100%;
 
       &__item {
         padding: 10px 20px;

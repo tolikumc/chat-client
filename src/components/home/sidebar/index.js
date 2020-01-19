@@ -42,6 +42,105 @@ export const Sidebar = () => (
               fullName: 'Петро Штахета',
               avatar: ''
             }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: 'asdkfhgaskdfjs',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: '12khds',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: 'lkjsldu',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: '/,mvbc.m.',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: 'qirsaj',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: 'lskdlygoewpa',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: 'asldajfhaj',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: '0-98f-s',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
+          },
+          {
+            _id: Math.random(),
+
+            text: 'tias nulla porro rem soluta, suscipit!',
+            created_at: 'Thu Jan 16 2020 21:59:37',
+            user: {
+              _id: 't628-98f-s',
+              fullName: 'Петро Штахета',
+              avatar: ''
+            }
           }
         ]}
       />

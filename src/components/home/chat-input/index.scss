@@ -1,0 +1,33 @@
+.chat-input {
+  margin: 20px;
+  position: relative;
+  display: flex;
+
+  &-smile {
+    margin-right: 15px;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    i.anticon {
+      margin-top: 12px;
+    }
+  }
+
+  input {
+
+    &:focus {
+      border-color: inherit;
+      box-shadow: none;
+    }
+  }
+
+  &-actions {
+    width: 70px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

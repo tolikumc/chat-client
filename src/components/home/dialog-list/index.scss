@@ -1,3 +1,59 @@
-.chat__dialog{
-  height: 100%;
+.chat__dialog {
+  width: 100%;
+
+  &-header {
+    padding: 12px;
+    border-bottom: 1px solid #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-center {
+      text-align: center;
+    }
+
+    &-username {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 5px;
+      font-family: Roboto, sans-serif;
+    }
+
+    &-status {
+      color: #bfbfbf;
+
+      .status {
+        position: relative;
+
+        &::before {
+          position: absolute;
+          content: '';
+          width: 6px;
+          height: 6px;
+          background-color: #d3d3d3;
+          left: 20px;
+          bottom: 3px;
+          border-radius: 50%;
+        }
+
+        &-online {
+
+          &::before {
+            background-color: #00c980;
+            position: absolute;
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  &-message {
+    padding: 20px;
+    overflow: auto;
+    height: calc(100% - 138px);
+  }
 }
