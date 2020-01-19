@@ -1,31 +1,16 @@
 import React from 'react';
 import './home.scss';
-// import { Message } from '../../components/message';
-import { Dialogs } from '../../components/dialogs';
-// import { Message } from '../../components/message';
+import { Sidebar } from '../../components/home/sidebar';
+import { DialogsList } from '../../components/home/dialog-list';
 
 export class Home extends React.Component {
   render() {
     return (
       <section className="home">
-        <Dialogs
-          userId={0}
-          items={[
-            {
-              _id: Math.random(),
-
-              text:
-                'Consequuntur dolorem expedita in, ipsam ipsum maiores molestias nulla porro rem soluta, suscipit!',
-              created_at: 'Thu Jan 16 2020 21:59:37',
-              user: {
-                _id: '3rwea',
-                fullName: 'Artem Maslov',
-                avatar:
-                  ''
-              }
-            }
-          ]}
-        />
+        <div className="chat">
+          <Sidebar />
+          <DialogsList />
+        </div>
 
         {/*<Message*/}
         {/*  date="Wed Jan 15 2020 14:58:35"*/}

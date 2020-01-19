@@ -7,9 +7,12 @@ export default hash => {
     .split('')
     .map(char => (char.charCodeAt(0) > 255 ? 255 : char.charCodeAt(0)));
   return {
-    color: tinycolor({ r, g, b }).toHexString(),
+    color: tinycolor({ r, g, b })
+      .saturate(30)
+      .toHexString(),
     colorLighten: tinycolor({ r, g, b })
-      .lighten(40)
+      .lighten(20)
+      .saturate(30)
       .toHexString()
   };
 };

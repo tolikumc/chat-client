@@ -1,0 +1,48 @@
+@import 'src/styles/variables';
+
+.chat__sidebar {
+  max-width: 320px;
+  width: 100%;
+  border-right: 1px solid #f7f7f7;
+
+  &-header {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+
+    > div {
+
+      i {
+        display: inline-block;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &-search {
+    padding: 0 20px 20px 20px;
+
+    input {
+      background: #f7f8f9;
+      border-radius: 2px;
+      border: 0;
+    }
+  }
+
+  &-list {
+
+    .dialogs {
+
+      &__item {
+        padding: 10px 20px;
+        margin-bottom: 0;
+        cursor: pointer;
+
+        &.active,
+        &:hover {
+          background: $hover-item-color;
+        }
+      }
+    }
+  }
+}

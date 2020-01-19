@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
-import play from '../../assets/img/play.svg';
-import pause from '../../assets/img/stop.svg';
-import waveSvg from '../../assets/img/wave.svg';
-import convertCurrentTime from '../../utils/helpers/convertCurrentTime';
+import play from '../../../assets/img/play.svg';
+import pause from '../../../assets/img/stop.svg';
+import waveSvg from '../../../assets/img/wave.svg';
+import convertCurrentTime from '../../../utils/helpers/convertCurrentTime';
 
 export const AudioMessage = ({ audio }) => {
   const [isPlay, setPlay] = useState(false);

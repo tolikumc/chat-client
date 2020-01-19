@@ -2,6 +2,10 @@
 @import 'variables';
 @import '~antd/dist/antd.css';
 
+body {
+  background: $main-bg;
+}
+
 html,
 body,
 #root,

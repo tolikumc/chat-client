@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.scss';
-import generateAvatar from '../../utils/helpers/generateAvatar';
+import generateAvatar from '../../../utils/helpers/generateAvatar';
 
 export const Avatar = ({ user }) => {
   if (user.avatar) {
@@ -11,7 +11,7 @@ export const Avatar = ({ user }) => {
     return (
       <div
         style={{
-          background: `linear-gradient(135deg, ${color} 0%, ${colorLighten} 96.52%)`
+          background: `linear-gradient(135deg, ${color} 0%, ${colorLighten} 96.52%)`,
         }}
         className="avatar avatar--symbol"
       >
