@@ -15,7 +15,7 @@ export const DialogsList = () => (
           <Status online={true} />
         </div>
       </div>
-      <Icon type="ellipsis" style={{ fontSize: '25px' }} />
+      <Icon type="ellipsis" style={{ fontSize: '25px', }} />
     </div>
     <div className="chat__dialog-message">
       <Messages />

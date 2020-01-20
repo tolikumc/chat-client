@@ -2,7 +2,7 @@ import React from 'react';
 import { Empty } from 'antd';
 import { Message } from '../message';
 
-export const Messages = (items) => {
+export const Messages = items => {
   return items.length ? (
     <div>
       <Message
