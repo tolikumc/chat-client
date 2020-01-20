@@ -1,6 +1,5 @@
 import { dialogsAPI } from '../../api/dialogs';
 
-
 const actions = {
   setDialog: items => ({
     type: 'DIALOGS:SET_ITEMS',

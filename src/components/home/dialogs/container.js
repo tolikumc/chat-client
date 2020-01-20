@@ -8,14 +8,12 @@ const SidebarContainer = ({ fetchDialogs, items }) => {
   const [filtered, setFiltered] = useState(items);
 
   useEffect(() => {
-    if(!items.length){
-      fetchDialogs()
+    if (!items.length) {
+      fetchDialogs();
     } else {
       setFiltered(items);
     }
-  }, [items]);
-
-
+  }, [fetchDialogs, items]);
 
   const getChangeInput = value => {
     setFiltered(
