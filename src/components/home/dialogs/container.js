@@ -25,14 +25,12 @@ const SidebarContainer = ({ fetchDialogs, items }) => {
     setSearchValue(value);
   };
 
-
-  const onSelectTest = (id) =>{
-    if(id){
-      console.log(id)
+  const onSelectTest = id => {
+    if (id) {
+      console.log(id);
     }
 
-    console.log('AAAA')
-
+    console.log('AAAA');
   };
 
   return (
