@@ -4,13 +4,14 @@ import { DialogItem } from '../dialogItem';
 import orderBy from 'lodash/orderBy';
 import { Empty } from 'antd';
 
-export const Dialogs = ({ items, userId }) => (
+export const Dialogs = ({ items, userId, onSelectDialog }) => (
   <div className="dialogs">
     {items.length ? (
       orderBy(items, ['created_at'], ['desc']).map(item => (
         <DialogItem
           key={item._id}
           unRead={0}
+          onSelectDialog={onSelectDialog}
           isMe={item.user._id === userId}
           {...item}
         />

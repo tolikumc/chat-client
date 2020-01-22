@@ -25,11 +25,16 @@ const SidebarContainer = ({ fetchDialogs, items }) => {
     setSearchValue(value);
   };
 
+  const onSelectDialog = id => {
+    console.log(id);
+  };
+
   return (
     <Sidebar
       items={filtered}
       onSearch={getChangeInput}
       inputValue={searchValue}
+      onSelectDialog={onSelectDialog}
     />
   );
 };

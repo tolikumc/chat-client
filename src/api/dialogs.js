@@ -9,3 +9,9 @@ export const dialogsAPI = {
     return instance.get('/dialogs');
   }
 };
+
+export const messagesAPI = {
+  getAllByDialogId(id) {
+    return instance.get(`/dialogs?${id}`);
+  }
+};
