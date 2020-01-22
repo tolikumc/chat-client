@@ -4,9 +4,10 @@ import classNames from 'classnames';
 import { Time } from '../time';
 import { MessageStatus } from '../messageStatus';
 import { AudioMessage } from '../audio-message';
+import { Avatar } from '../avatar';
 
 export const Message = ({
-  avatar,
+  user,
   text,
   date,
   isMe,
@@ -25,7 +26,7 @@ export const Message = ({
       })}
     >
       <div className="message__avatar">
-        <img src={avatar} alt="av" />
+        <Avatar user={user} />
       </div>
       <div className="message__content">
         <MessageStatus isMe={isMe} isRead={isRead} />

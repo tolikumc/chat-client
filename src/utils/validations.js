@@ -7,7 +7,6 @@ const validateFunc = ({ isAuth }) => ({
     }
   },
   password: (errors, value) => {
-    console.log(value);
     if (!value) {
       errors.password = 'Enter password';
     } else if (!/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/.test(value)) {

@@ -3,7 +3,7 @@ import './index.scss';
 import { Icon } from 'antd';
 import { Status } from '../status';
 import { ChatInput } from '../chat-input';
-import { Messages } from '../messages';
+import MessagesContainer from '../messages/container';
 
 export const DialogsList = () => (
   <div className="chat__dialog">
@@ -18,7 +18,7 @@ export const DialogsList = () => (
       <Icon type="ellipsis" style={{ fontSize: '25px', }} />
     </div>
     <div className="chat__dialog-message">
-      <Messages />
+      <MessagesContainer />
     </div>
     <div className="chat__dialog-input">
       <ChatInput />

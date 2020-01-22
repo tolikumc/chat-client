@@ -16,11 +16,19 @@ import { Avatar } from '../avatar';
 //   }
 // };
 
-export const DialogItem = ({ unRead, text, user, isMe }) => (
+export const DialogItem = ({
+  onSelectDialog,
+  unRead,
+  text,
+  user,
+  isMe,
+  _id
+}) => (
   <div
     className={classNames('dialogs__item', {
       'dialogs__item--online': user.online
     })}
+    onClick={() => onSelectDialog(_id)}
   >
     <div className="dialogs__item-avatar">
       <Avatar user={user} />

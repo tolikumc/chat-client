@@ -12,6 +12,6 @@ export const dialogsAPI = {
 
 export const messagesAPI = {
   getAllByDialogId(id) {
-    return instance.get(`/dialogs?${id}`);
+    return instance.get(`/message?dialog=${id}`);
   }
 };
