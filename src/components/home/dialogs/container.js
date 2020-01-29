@@ -3,7 +3,7 @@ import { Sidebar } from '../sidebar';
 import { connect } from 'react-redux';
 import dialogsActions from '../../../redux/actions/dialogs';
 
-const SidebarContainer = ({ fetchDialogs, items, setCurrentDialogId }) => {
+const SidebarContainer = ({ fetchDialogs, items, currentDialogId,setCurrentDialogId }) => {
   const [searchValue, setSearchValue] = useState('');
   const [filtered, setFiltered] = useState(items);
 
@@ -31,6 +31,7 @@ const SidebarContainer = ({ fetchDialogs, items, setCurrentDialogId }) => {
       onSearch={getChangeInput}
       inputValue={searchValue}
       onSelectDialog={setCurrentDialogId}
+      currentDialogId={currentDialogId}
     />
   );
 };

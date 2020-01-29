@@ -22,11 +22,13 @@ export const DialogItem = ({
   text,
   user,
   isMe,
+  currentDialogId,
   _id
 }) => (
   <div
     className={classNames('dialogs__item', {
-      'dialogs__item--online': user.online
+      'dialogs__item--online': user.online,
+      'dialogs__item--selected': currentDialogId === _id
     })}
     onClick={() => onSelectDialog(_id)}
   >
