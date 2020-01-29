@@ -10,18 +10,20 @@ const MessagesContainer = ({
   items,
   isLoading
 }) => {
-    const messagesRef =useRef(null);
+  const messagesRef = useRef(null);
   useEffect(() => {
     if (currentDialogId) {
       fetchMessages(currentDialogId);
     }
   }, [currentDialogId, fetchMessages]);
 
-  useEffect(()=>{
-      messagesRef.current.scrollTo(0, 99999);
+  useEffect(() => {
+    messagesRef.current.scrollTo(0, 99999);
   }, [items]);
 
-  return <Messages items={items} isLoading={isLoading} blockRef={messagesRef}/>;
+  return (
+    <Messages items={items} isLoading={isLoading} blockRef={messagesRef} />
+  );
 };
 
 export default connect(
