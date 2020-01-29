@@ -3,6 +3,12 @@
   position: relative;
   display: flex;
 
+  &-emoji-picker {
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+  }
+
   &-smile {
     margin-right: 15px;
 
