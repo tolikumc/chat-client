@@ -16,6 +16,7 @@
   }
 
   input {
+
     &:focus {
       border-color: inherit;
       box-shadow: none;
@@ -28,13 +29,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     &-upload-btn {
       cursor: pointer;
+
       &:hover {
         cursor: pointer;
-        input{
+
+        input {
           cursor: pointer;
         }
+
         i {
           opacity: 1;
           cursor: pointer;
