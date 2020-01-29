@@ -3,7 +3,13 @@ import './index.scss';
 import { Icon, Input } from 'antd';
 import { Dialogs } from '../dialogs';
 
-export const Sidebar = ({ items, onSearch, inputValue, currentDialogId, onSelectDialog }) => (
+export const Sidebar = ({
+  items,
+  onSearch,
+  inputValue,
+  currentDialogId,
+  onSelectDialog
+}) => (
   <div className="chat__sidebar">
     <div className="chat__sidebar-header">
       <div>
@@ -21,7 +27,12 @@ export const Sidebar = ({ items, onSearch, inputValue, currentDialogId, onSelect
       />
     </div>
     <div className="chat__sidebar-list">
-      <Dialogs userId={0} items={items} onSelectDialog={onSelectDialog} currentDialogId={currentDialogId} />
+      <Dialogs
+        userId={0}
+        items={items}
+        onSelectDialog={onSelectDialog}
+        currentDialogId={currentDialogId}
+      />
     </div>
   </div>
 );

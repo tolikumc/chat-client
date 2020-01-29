@@ -3,7 +3,12 @@ import { Sidebar } from '../sidebar';
 import { connect } from 'react-redux';
 import dialogsActions from '../../../redux/actions/dialogs';
 
-const SidebarContainer = ({ fetchDialogs, items, currentDialogId,setCurrentDialogId }) => {
+const SidebarContainer = ({
+  fetchDialogs,
+  items,
+  currentDialogId,
+  setCurrentDialogId
+}) => {
   const [searchValue, setSearchValue] = useState('');
   const [filtered, setFiltered] = useState(items);
 

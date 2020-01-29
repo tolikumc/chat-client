@@ -6,7 +6,8 @@
   max-width: 320px;
   margin-bottom: 20px;
   $item: &;
-  &--selected{
+
+  &--selected {
     background-color: $hover-item-color;
   }
 
